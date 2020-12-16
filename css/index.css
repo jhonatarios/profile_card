@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,800;1,400&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #111111;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 16px;
+}
+
+.card{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 480px;
+    margin: -240px 0 0 -240px;
+    background-color: #222222;
+    text-align: center;
+}
+
+.card .card-header {
+    position: relative;
+    height: 48px;
+}
+
+.card .card-header .profile-photo {
+    position: absolute;
+    border-radius: 1000px;
+    width: 96px;
+    height: 96px;
+    transform: translate(-50%, -50%)
+}
+
+.card .card-body {
+    padding: 10px 40px;
+}
+
+.card .card-body .name {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 10px 0 0;
+}
+
+.card .card-body .email {
+    font-size: 13px;
+    color: #777;
+    margin: 5px 0 0;
+}
+
+.card .card-body .city {
+    margin: 10px 0 0;
+    font-size: 14px;
+}
+
+.card .card-body .about {
+    line-height: 24px;
+}
+
+.card .social-icon {
+    font-size: 18px;
+    margin: 0 7px;
+}
+
+.card .social-icons{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.card .social-icons a{
+    text-decoration: none;
+    color: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 20px;
+    display: inline-block;
+    margin: 0 10px 10px;
+    text-align: center;
+    font-size: 24px;
+    transition: color 300ms linear;
+}
+
+.card .social-icons a:hover{color: #9576A8;transition: color 300ms linear;}
+.card .social-icons i{line-height: 24px;}
+
+.card .card-footer {
+    width: 100%;
+    border-top: 1px solid #9576A8
+}
+
+@media screen and (max-width: 600px) {
+    .card {
+        width: 400px;
+        margin: -200px 0 0 -200px;
+    }
+}
